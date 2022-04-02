@@ -52,4 +52,8 @@ def add_email():
 
 app.register_blueprint(bp)
 
-app.run(host="localhost", port=3000, debug=True)
+app.run(
+    debug=True,
+    host="0.0.0.0",
+    port=int(os.getenv("PORT", 8080)),
+)
