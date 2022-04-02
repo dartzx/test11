@@ -13,6 +13,9 @@ function App() {
       <a href = "/home">
           Click to go to home page!
       </a>
+      <br>
+      
+      </br>
       <a href ="/">
         Click here to return to the sign up page
     </a>
