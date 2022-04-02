@@ -6,7 +6,7 @@ const clientId = '600517270441-0bie9dg2m7jkvji9silf8ipitov43tf3.apps.googleuserc
 function Logout() {
     const onSuccess = () => {
       console.log('Logout made successfully');
-      alert('Logout made successfully ✌');
+      alert('Logout made successfully');
     };
     
     return (

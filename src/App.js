@@ -10,6 +10,9 @@ function App() {
       <h2>Login in to Google!</h2>
       <Login />
       <Logout />
+      <a href = "/home">
+          Click to go to home page!
+      </a>
     </div>
   );
 }

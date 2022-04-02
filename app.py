@@ -54,7 +54,7 @@ def add_email():
         db.session.add(email)
         db.session.commit()
         #This is what the user will see after they log in 
-    return flask.redirect(flask.url_for("home"))
+    return ""
 
 
 
