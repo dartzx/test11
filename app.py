@@ -34,6 +34,12 @@ def login():
     # Flask will stop serving this React page correctly
     return flask.render_template("index.html")
 
+
+@app.route("/home")
+def home():
+
+    return flask.render_template("home.html")
+
 @app.route("/")
 def index():
     return flask.render_template("goto.html")
@@ -47,7 +53,9 @@ def add_email():
     if len(Emails.query.filter_by(email=userObj["email"]).all()) == 0:
         db.session.add(email)
         db.session.commit()
-    return ""
+        #This is what the user will see after they log in 
+    return flask.redirect(flask.url_for("home"))
+
 
 
 app.register_blueprint(bp)
